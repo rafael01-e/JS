@@ -1,16 +1,29 @@
-// If statements
-let age;
+// Checked Property
+
+const myCheckbox = document.getElementById("myCheckbox") //Subscribe
+const visaBtn = document.getElementById("visaBtn") //Visa
+const mastercardBtn = document.getElementById("mastercardBtn") //Mastercard
+const paypalBtn = document.getElementById("paypalBtn") //Paypal
+
+let result = document.getElementById("result"); //Result
 
 document.getElementById("mySubmit").onclick = function () {
-    age = document.getElementById("ageText").value;
-    age = Number(age);
-    if (age >= 18) {
-        document.getElementById("result").textContent = "You are old enough to get a license";
-    }
-    else if (age < 18 && age > 0) {
-        document.getElementById("result").textContent = "You are too young to get a license";
+    if (myCheckbox.checked) {
+        subresult.textContent = "You are subscribed";
     }
     else {
-        document.getElementById("result").textContent = "Enter a valid age";
+        subresult.textContent = "You are NOT subscribed";
+    }
+    if (visaBtn.checked) {
+        payresult.textContent = "You selected Visa";
+    }
+    else if (mastercardBtn.checked) {
+        payresult.textContent = "You selected Mastercard";
+    }
+    else if (paypalBtn.checked) {
+        payresult.textContent = "You selected Paypal";
+    }
+    else {
+        payresult.textContent = "You did not select a payment method";
     }
 }
