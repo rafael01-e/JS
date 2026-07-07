@@ -1,29 +1,36 @@
-// Checked Property
+//Switch Statement
 
-const myCheckbox = document.getElementById("myCheckbox") //Subscribe
-const visaBtn = document.getElementById("visaBtn") //Visa
-const mastercardBtn = document.getElementById("mastercardBtn") //Mastercard
-const paypalBtn = document.getElementById("paypalBtn") //Paypal
+const btn = document.getElementById("myButton");
+const result = document.getElementById("result");
+const weekdayInput = document.getElementById("myText");
 
-let result = document.getElementById("result"); //Result
+btn.onclick = function () {
+    const weekday = weekdayInput.value;
+    switch (Number(weekday)) {
+        case 1:
+            result.textContent = "It's Monday";
 
-document.getElementById("mySubmit").onclick = function () {
-    if (myCheckbox.checked) {
-        subresult.textContent = "You are subscribed";
-    }
-    else {
-        subresult.textContent = "You are NOT subscribed";
-    }
-    if (visaBtn.checked) {
-        payresult.textContent = "You selected Visa";
-    }
-    else if (mastercardBtn.checked) {
-        payresult.textContent = "You selected Mastercard";
-    }
-    else if (paypalBtn.checked) {
-        payresult.textContent = "You selected Paypal";
-    }
-    else {
-        payresult.textContent = "You did not select a payment method";
+            break;
+        case 2:
+            result.textContent = "It's Tuesday";
+            break;
+        case 3:
+            result.textContent = "It's Wednesday";
+            break;
+        case 4:
+            result.textContent = "It's Thursday";
+            break;
+        case 5:
+            result.textContent = "It's Friday";
+            break;
+        case 6:
+            result.textContent = "It's Saturday";
+            break;
+        case 7:
+            result.textContent = "It's Sunday";
+            break;
+        default:
+            result.textContent = "Please enter a valid day";
+            break;
     }
 }

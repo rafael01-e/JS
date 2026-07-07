@@ -4,7 +4,7 @@ body {
     text-align: center;
 }
 
-#mySubmit {
+#myButton {
     font-size: 1em;
     padding: 10px 20px;
     border-radius: 10px;
@@ -15,16 +15,9 @@ body {
     text-align: center;
 }
 
-#subresult {
+#result {
     font-size: 2em;
     margin: 20px 0;
-    color: rgb(34, 177, 76);
-    font-family: Helvetica;
-}
-
-#payresult {
-    font-size: 2em;
-    margin: 20px 0;
-    color: rgb(34, 177, 76);
+    color: rgb(143, 56, 209);
     font-family: Helvetica;
 }
