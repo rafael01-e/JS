@@ -1,4 +1,22 @@
 body {
     font-family: Verdana;
     font-size: 1em;
+    text-align: center;
+}
+
+#roller {
+    font-size: 2em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#result {
+    font-size: 2em;
+    margin: 20px 0;
+    font-family: Helvetica;
 }

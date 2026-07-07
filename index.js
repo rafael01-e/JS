@@ -1,11 +1,9 @@
-//Constants
-const PI = 3.14159;
-let radius;
-let circumference;
+//Random Numbers --> Using dice as exemple
+const max = 6
+const min = 1
+let diceNumber;
 
-document.getElementById("mySubmit").onclick = function () {
-    radius = document.getElementById("radius").value;
-    radius = Number(radius);
-    circumference = 2 * PI * radius;
-    document.getElementById("result").textContent = circumference + "m";
+document.getElementById("roller").onclick = function () {
+    diceNumber = Math.floor(Math.random() * max - min) + min;
+    document.getElementById("result").textContent = diceNumber;
 }
