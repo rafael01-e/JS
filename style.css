@@ -4,12 +4,23 @@ body {
     text-align: center;
 }
 
-#roller {
+#mySubmit {
     font-size: 2em;
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgb(5, 8, 240);
+    color: rgb(249, 248, 248);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#ageText {
+    font-size: 2em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(24, 28, 235);
+    color: rgb(249, 248, 248);
     border: none;
     cursor: pointer;
     text-align: center;
