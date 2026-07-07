@@ -1,6 +1,7 @@
-let username;
+let age;
 document.getElementById("mySubmit").onclick = function () {
-    username = document.getElementById("myText").value;
-    document.getElementById("myH1").textContent = `Hello ${username}`;
-    console.log(username);
+    age = document.getElementById("myText").value;
+    age = Number(age)
+    document.getElementById("myH1").textContent = `You are ${age + 4} years old`;
+    console.log(age);
 }
