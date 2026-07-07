@@ -4,6 +4,6 @@ const min = 1
 let diceNumber;
 
 document.getElementById("roller").onclick = function () {
-    diceNumber = Math.floor(Math.random() * max - min) + min;
+    diceNumber = Math.floor(Math.random() * max) + min;
     document.getElementById("result").textContent = diceNumber;
 }
