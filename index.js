@@ -1,36 +1,17 @@
-//Switch Statement
+let username = "RafaelFerreiraVasconcelos";
+let phonenumber = "(83) 99133-6039"
 
-const btn = document.getElementById("myButton");
-const result = document.getElementById("result");
-const weekdayInput = document.getElementById("myText");
+firstLetter = username.charAt(0);// Find char at position
+lastLetter = username.charAt(-1);// Last Letter
+firstOccurence = username.indexOf("a");// Find the first occurence
+lastOccurence = username.lastIndexOf("a");
+length = username.length;
+trimmedUsername = username.trim();
+UpperCase = trimmedUsername.toUpperCase();
+LowerCase = trimmedUsername.toLowerCase();
+StartsWith = username.startsWith("R");
+EndsWith = username.endsWith("f");
+Include = username.includes("@");
+replace = phonenumber.replaceAll(" ", "@");
 
-btn.onclick = function () {
-    const weekday = weekdayInput.value;
-    switch (Number(weekday)) {
-        case 1:
-            result.textContent = "It's Monday";
-
-            break;
-        case 2:
-            result.textContent = "It's Tuesday";
-            break;
-        case 3:
-            result.textContent = "It's Wednesday";
-            break;
-        case 4:
-            result.textContent = "It's Thursday";
-            break;
-        case 5:
-            result.textContent = "It's Friday";
-            break;
-        case 6:
-            result.textContent = "It's Saturday";
-            break;
-        case 7:
-            result.textContent = "It's Sunday";
-            break;
-        default:
-            result.textContent = "Please enter a valid day";
-            break;
-    }
-}
+console.log(replace)
