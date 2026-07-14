@@ -1,5 +1,8 @@
-let username = window.prompt("Enter your username:");
+const temp = -20;
 
-username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
-console.log(username)
-
+if (temp > 0 && temp <= 30) {
+    console.log("Weather is good")
+}
+else {
+    console.log("Weather is bad")
+}
